@@ -1,0 +1,14 @@
+<% include header %>
+
+<p> 
+  检索到匹配的成语: <%= idioms.length %>
+</p>
+
+<hr/>
+
+<% for(var i = 0; i < idioms.length; i++) { %>
+  <a href="http://hanyu.baidu.com/s?wd= <%= idioms[i] %>" target="_blank"><%= idioms[i] %></a><br/>
+<% } %>
+<hr/>
+
+<% include footer %>
